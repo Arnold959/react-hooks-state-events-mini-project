@@ -17,6 +17,7 @@ test("is removed from the list when the delete button is clicked", () => {
   render(<App />);
   const task = screen.queryByText(/Buy rice/);
   const deleteButton = task.parentElement.querySelector("button");
+  console.log(codeButton)
 
   fireEvent.click(deleteButton);
 
